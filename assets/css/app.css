@@ -1,0 +1,31 @@
+body {
+    background-color: lightgray;
+}
+div#page {
+    padding: 15px;
+}
+
+div#footer {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 80px;
+    font-size: 10px;
+}
+div#spinner {
+    float: right;
+    padding-right: 90px;
+    margin-top: -30px;
+    display: none;
+}
+
+div#spinner progress {
+    width:45px;
+    margin: 0px;
+    margin-top: 0px;
+    height: 10px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}

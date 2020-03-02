@@ -1,0 +1,18 @@
+{% if menu|length > 0 %}
+    <div class="menubar ui-widget-header ui-corner-all">
+        {% for key,categoryMenu in menu %}
+            {% if categoryMenu|length == 1 %}
+                {% for module in categoryMenu %}
+                    <a href="/display/{{ module.display }}" class="">{{ module.name }}</a>
+                {% endfor %}
+            {% elseif categoryMenu|length > 1 %}
+                <a href="#" class="module_menu_button ui-state-default ui-button-text-icon-secondary">{{ key }}</a>
+                <ul>
+                    {% for module in categoryMenu %}
+                        <li><a href="/display/{{ module.display }}" class="">{{ module.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endif %}

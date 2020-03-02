@@ -1,0 +1,15 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: Tools
+            description: Tools api doc
+            version: 1.0.1
+    areas: # to filter documented areas
+        internal:
+            path_patterns:
+              - ^/internal
+        default:
+            path_patterns:
+              - ^/api(?!/doc/{area}$)
+              #- ^/api(?!/doc$) # Accepts routes under /api except /api/doc
+

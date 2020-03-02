@@ -1,0 +1,70 @@
+security:
+  # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+  encoders:
+    FOS\UserBundle\Model\UserInterface:
+      algorithm:         sha512
+      encode_as_base64:  true
+      iterations:        100
+  providers:
+    #in_memory: { memory: ~ }
+    core_provider:
+      entity:
+        class: App\Entity\User
+        property: username
+
+  session_fixation_strategy: none
+
+  firewalls:
+    #        wsse_secured:
+    #            pattern:   ^/
+    #            stateless: true
+    #            wsse:      true
+    dev:
+      pattern: ^/(_(profiler|wdt)|css|images|js)/
+      security: false
+    main:
+      #anonymous: ~
+      pattern: ^/
+      form_login:
+        provider: core_provider
+        csrf_token_generator: security.csrf.token_manager
+        #check_path: fos_user_security_check
+        check_path: login_check
+        always_use_default_target_path: true
+        require_previous_session: true
+        default_target_path: core_home
+      anonymous:    true
+      guard:
+        provider: core_provider
+        authenticators:
+          - App\Security\AuthenticatorGuard
+      remember_me:
+        secret:   '%kernel.secret%'
+        lifetime: 604800 # 1 week in seconds
+        path:     /
+      logout:       true
+
+
+      # activate different ways to authenticate
+
+      # http_basic: ~
+      # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
+
+      # form_login: ~
+      # https://symfony.com/doc/current/security/form_login_setup.html
+
+  # Easy way to control access for large sections of your site
+  # Note: Only the *first* access control that matches will be used
+  access_control:
+    # - { path: ^/admin, roles: ROLE_ADMIN }
+    # - { path: ^/profile, roles: ROLE_USER }
+    # - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+    - { path: ^/register, role: ROLE_ADMIN }
+    - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
+    - { path: ^/api/doc/internal, role: ROLE_SUPER_ADMIN }
+    #- { path: ^/*, role: ROLE_USER }
+    #- { path: ^/*, role: IS_AUTHENTICATED_REMEMBERED }
+    - { path: ^/admin/, role: ROLE_SUPER_ADMIN }
+    - { path: ^/login$, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+    - { path: ^/.*, roles: IS_AUTHENTICATED_FULLY }
+

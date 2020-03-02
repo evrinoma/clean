@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block meta %}
+        <meta charset="UTF-8">
+    {% endblock meta %}
+    <title>{% block title %}Wellcome{% endblock %}</title>
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css" media="screen" title="no title" charset="utf-8">
+    {% endblock stylesheets %}
+
+    {% block load_data %}
+    {% endblock load_data %}
+</head>
+
+<body>
+{% block body %}
+    {% spaceless %}
+        {% block menubar %}
+            <div>
+                <div class="menu">
+                    <nav>
+                        {{ knp_menu_render('main') }}
+                    </nav>
+                </div>
+                {% block spinner %}
+                    <div id="spinner">
+                        <div class="ui active centered inline loader"></div>
+                    </div>
+                {% endblock %}
+            </div>
+        {% endblock %}
+        <div id="page">
+            {% block page %}
+            {% endblock %}
+        </div>
+        <div id="footer">
+            <hr>
+            <div id="footer_content">
+                {% block footer %}
+                {% endblock %}
+            </div>
+        </div>
+    {% endspaceless %}
+{% endblock %}
+{% block javascripts %}
+    <script src="{{ asset('build/app.js', 'webpack') }}"></script>
+{% endblock %}
+</body>
+</html>

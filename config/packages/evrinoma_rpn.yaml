@@ -1,0 +1,2 @@
+rpn:
+  operation_factory: App\Argument\Operation\MyOperationFactory
