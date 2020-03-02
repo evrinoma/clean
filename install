@@ -1,0 +1,6 @@
+#!/bin/bash
+composer require evrinoma/rpn-bundle:*@dev
+composer install
+bin/console fos:js-routing:dump --format=json --target=public/js/fos_js_routes.json
+yarn add webpack webpack-cli autoprefixer webpack-manifest-plugin clean-webpack-plugin html-webpack-plugin html-webpack-inline-source-plugin babel-preset-es2015 vue-loader vuetable-2 css-loader  babel-loader@7  babel-core babel-preset-env  style-loader  postcss-loader  file-loader  jquery
+webpack --env=dev && chown -R apache.apache .
