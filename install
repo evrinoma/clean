@@ -1,7 +1,19 @@
 #!/bin/bash
+USER=admin
+USERMAIL=admin@mail.mail
+PASS=admin
 git clone https://github.com/evrinoma/RpnBundle.git 
 composer require evrinoma/rpn-bundle:*@dev
+sed -i -e "s@db_user@tools@" .env
+sed -i -e "s@db_password@tools@" .env
+sed -i -e "s@db_name@tools@" .env
+sed -i -e "s@127.0.0.1:3306@sql.host:3306@" .env
 composer install
+php bin/console doctrine:database:create --no-interaction 
+php bin/console d:m:mi --no-interaction 
+php bin/console fos:user:create $USER $USERMAIL $PASS
+php bin/console fos:user:promote $USER ROLE_SUPER_ADMIN
 bin/console fos:js-routing:dump --format=json --target=public/js/fos_js_routes.json
+php bin/console menu:default
 yarn add webpack webpack-cli autoprefixer webpack-manifest-plugin clean-webpack-plugin html-webpack-plugin html-webpack-inline-source-plugin babel-preset-es2015 vue-loader vuetable-2 css-loader  babel-loader@7  babel-core babel-preset-env  style-loader  postcss-loader  file-loader  jquery
 webpack --env=dev && chown -R apache.apache .
