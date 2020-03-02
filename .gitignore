@@ -12,5 +12,5 @@
 .phpunit
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
-/RpnBundle/
+#/RpnBundle/
 
