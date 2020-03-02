@@ -1,4 +1,5 @@
 #!/bin/bash
+git clone https://github.com/evrinoma/RpnBundle.git 
 composer require evrinoma/rpn-bundle:*@dev
 composer install
 bin/console fos:js-routing:dump --format=json --target=public/js/fos_js_routes.json
