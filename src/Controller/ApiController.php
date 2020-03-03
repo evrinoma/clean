@@ -105,8 +105,12 @@ class ApiController extends AbstractController
      */
     public function rpnAction(Request $request, MenuManager $menuManager, RpnCalc $rpnCalc)
     {
-        $rpn    = $request->get('rpn', '');
-        $result = $rpnCalc->set($rpn)->calc();
+        $rpn = $request->get('rpn', '');
+        try {
+            $result = $rpnCalc->set($rpn)->calc();
+        } catch (\Exception $exception) {
+            $result = $exception->getMessage();
+        }
 
         return $this->json(['message' => ['formula' => $rpn, 'result' => $result]]);
     }
