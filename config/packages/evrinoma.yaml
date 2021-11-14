@@ -11,14 +11,14 @@ nelmio_api_doc:
 
 safety:
   firewall_session_key: main
-  redirect_by_server: false
+  redirect_by_server: true
   route:
     check: login_check
     login: login
     redirect: core_home
   event:
-    on_authentication_success: true
-    on_authentication_failure: ~
+    on_authentication_success: false
+    on_authentication_failure: false
 #  ldap_servers:
 #    ite-ng.ru:
 #      - { host: "ldap://iteng06.ite-ng.ru", port: "636", search: "OU=MSK,DC=ite-ng,DC=ru" }

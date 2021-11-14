@@ -31,9 +31,8 @@ security:
                 default_target_path: core_home
             guard:
                 provider: core_provider
-                entry_point: Evrinoma\SecurityBundle\Guard\Ldap\AuthenticatorGuard
+                entry_point: Evrinoma\SecurityBundle\Guard\Login\AuthenticatorGuard
                 authenticators:
-                    - Evrinoma\SecurityBundle\Guard\Ldap\AuthenticatorGuard
                     - Evrinoma\SecurityBundle\Guard\Login\AuthenticatorGuard
             remember_me:
                 secret: '%kernel.secret%'
