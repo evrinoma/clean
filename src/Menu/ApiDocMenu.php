@@ -7,7 +7,7 @@ namespace App\Menu;
 use Doctrine\ORM\EntityManagerInterface;
 use Evrinoma\MenuBundle\Entity\MenuItem;
 use Evrinoma\MenuBundle\Menu\MenuInterface;
-use Evrinoma\UtilsBundle\Voter\RoleInterface;
+use Evrinoma\SecurityBundle\Voter\RoleInterface;
 
 /**
  * Class ApiDocMenu
