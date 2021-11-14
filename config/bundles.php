@@ -25,4 +25,6 @@ return [
     Evrinoma\ShellBundle\EvrinomaShellBundle::class => ['all' => true],
     Evrinoma\DashBoardBundle\EvrinomaDashBoardBundle::class => ['all' => true],
     Evrinoma\SecurityBundle\EvrinomaSecurityBundle::class => ['all' => true],
+    Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
+    Evrinoma\TestUtilsBundle\EvrinomaTestUtilsBundle::class => ['dev' => true, 'test' => true],
 ];
