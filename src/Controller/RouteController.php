@@ -5,6 +5,7 @@ namespace App\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
+use Throwable;
 
 class RouteController extends AbstractController
 {
@@ -32,8 +33,15 @@ class RouteController extends AbstractController
      */
     public function clearCache()
     {
-        opcache_reset();
-        apcu_clear_cache();
+        try {
+            opcache_reset();
+        } catch(Throwable $e)    {
+        }
+
+        try {
+            apcu_clear_cache();
+        } catch(Throwable $e)    {
+        }
 
         return [];
     }
