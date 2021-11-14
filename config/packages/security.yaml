@@ -1,0 +1,61 @@
+security:
+    encoders:
+        FOS\UserBundle\Model\UserInterface:
+            algorithm: sha512
+            encode_as_base64: true
+            iterations: 100
+    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    providers:
+        #users_in_memory: { memory: null }
+        core_provider:
+            entity:
+                class: App\Entity\User
+                property: username
+
+    session_fixation_strategy: none
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        main:
+            provider: core_provider
+            access_denied_url: core_home
+            pattern: ^/
+            form_login:
+                csrf_token_generator: security.csrf.token_manager
+                login_path: fos_user_security_login
+                check_path: fos_user_security_check
+                always_use_default_target_path: true
+                require_previous_session: true
+                default_target_path: core_home
+            guard:
+                provider: core_provider
+                entry_point: Evrinoma\SecurityBundle\Guard\Ldap\AuthenticatorGuard
+                authenticators:
+                    - Evrinoma\SecurityBundle\Guard\Ldap\AuthenticatorGuard
+                    - Evrinoma\SecurityBundle\Guard\Login\AuthenticatorGuard
+            remember_me:
+                secret: '%kernel.secret%'
+                lifetime: 604800 # 1 week in seconds
+                path: /
+            logout: true
+            anonymous: true
+#            lazy: true
+#            provider: users_in_memory
+
+            # activate different ways to authenticate
+            # https://symfony.com/doc/current/security.html#firewalls-authentication
+
+            # https://symfony.com/doc/current/security/impersonating_user.html
+            # switch_user: true
+
+    # Easy way to control access for large sections of your site
+    # Note: Only the *first* access control that matches will be used
+    access_control:
+        # - { path: ^/admin, roles: ROLE_ADMIN }
+        # - { path: ^/profile, roles: ROLE_USER }
+        - { path: ^/api/doc/*, roles: [ ROLE_SUPER_ADMIN, ROLE_DEV_USER ] }
+        - { path: ^/admin/, role: ROLE_SUPER_ADMIN }
+        - { path: ^/login$, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/.*, roles: IS_AUTHENTICATED_FULLY }

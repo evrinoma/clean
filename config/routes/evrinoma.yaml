@@ -1,0 +1,5 @@
+dashboard:
+  resource: "@EvrinomaDashBoardBundle/Resources/config/routes.yml"
+
+menu:
+  resource: "@EvrinomaMenuBundle/Resources/config/routes.yml"

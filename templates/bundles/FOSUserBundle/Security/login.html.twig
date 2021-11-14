@@ -1,0 +1,22 @@
+{% trans_default_domain 'FOSUserBundle' %}
+{% extends "base.html.twig" %}
+
+{% block javascripts %}
+    <script src="{{ asset('build/login.js', 'webpack') }}"></script>
+{% endblock %}
+
+
+{% block body %}
+    <div id="login-div">
+        <login-component
+                user-name-placeholder="{{ 'security.login.username'|trans }}"
+                password-placeholder="{{ 'security.login.password'|trans }}"
+                remember-label="{{ 'security.login.remember_me'|trans }}"
+                submit-url="{{ path('fos_user_security_check') }}"
+                form-title="Welcome"
+                {% if error %}
+                    error-message="{{ error.messageKey|trans(error.messageData, 'security') }}"
+                {% endif %}
+        />
+    </div>
+{% endblock body %}

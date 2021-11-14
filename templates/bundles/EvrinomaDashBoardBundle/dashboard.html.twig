@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ titleHeader }}{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('build/status.js', 'webpack') }}"></script>
+{% endblock %}

@@ -1,0 +1,5 @@
+{% extends '@!NelmioApiDoc/SwaggerUi/index.html.twig' %}
+
+{% block swagger_initialization %}
+    <script src="{{ asset('build/app.js', 'webpack') }}"></script>
+{% endblock swagger_initialization %}

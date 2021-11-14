@@ -1,0 +1,33 @@
+nelmio_api_doc:
+  documentation:
+    info:
+      title: Evrinoma Api
+      description: Evrinoma api doc
+      version: 1.0.1
+  areas: # to filter documented areas
+    evrinoma:
+      path_patterns:
+        - ^/evrinoma/api
+
+safety:
+  firewall_session_key: main
+  redirect_by_server: false
+  route:
+    check: login_check
+    login: login
+    redirect: core_home
+  event:
+    on_authentication_success: true
+    on_authentication_failure: ~
+#  ldap_servers:
+#    ite-ng.ru:
+#      - { host: "ldap://iteng06.ite-ng.ru", port: "636", search: "OU=MSK,DC=ite-ng,DC=ru" }
+#      - { host: "ldap://iteng20.ite-ng.ru", port: "636", search: "OU=MSK,DC=ite-ng,DC=ru" }
+#    ur.ite-ng.ru:
+#      - { host: "ldap://ur04.ur.ite-ng.ru", port: "636", search: "OU=ekaterinburg,DC=ur,DC=ite-ng,DC=ru" }
+#      - { host: "ldap://ur05.ur.ite-ng.ru", port: "636", search: "OU=ekaterinburg,DC=ur,DC=ite-ng,DC=ru" }
+  token: false
+#    jwt:
+#      access_ttl: '%env(resolve:JWT_ACCESS_TOKEN_TTL)%'
+#      refresh_ttl: '%env(JWT_REFRESH_TOKEN_TTL)%'
+#      domain: '%env(JWT_DOMAIN)%'

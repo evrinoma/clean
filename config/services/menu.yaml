@@ -1,0 +1,9 @@
+services:
+  App\Menu\ApiDocMenu:
+    tags:
+      - { name: 'evrinoma.menu', priority: 20 }
+
+  App\Menu\ServiceMenu:
+    tags:
+      - { name: 'evrinoma.menu', priority: 20 }
+

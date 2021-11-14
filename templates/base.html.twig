@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block meta %}
+        <meta charset="UTF-8">
+    {% endblock meta %}
+    <title>{% block title %}Wellcome{% endblock %}</title>
+
+    {% block stylesheets %}
+        {% include 'base/css.html.twig' %}
+    {% endblock stylesheets %}
+
+    {% block load_data %}
+    {% endblock load_data %}
+</head>
+
+<body>
+{% block body %}
+    {% apply spaceless %}
+        <div id="app"></div>
+    {% endapply %}
+{% endblock %}
+{% block javascripts %}
+    {% include 'base/js.html.twig' %}
+{% endblock %}
+</body>
+</html>
