@@ -15,6 +15,7 @@
         "doctrine/orm": "^2.8",
         "evrinoma/dashboard-bundle": "dev-master",
         "evrinoma/menu-bundle": "dev-master",
+        "evrinoma/security-bundle": "dev-master",
         "evrinoma/user-bundle": "^2.1",
         "evrinoma/utils-bundle": "dev-master",
         "friendsofsymfony/jsrouting-bundle": "^2.7",
@@ -100,7 +101,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "5.2.*"
+            "require": "5.4.*"
         }
     },
     "repositories": {
