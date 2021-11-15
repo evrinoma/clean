@@ -26,7 +26,9 @@ trait AuthorizationTrait
             $client = static::createClient();
         }
 
-        $container = $client->getContainer();
+        if (($container = $this->getContainer()) && !$client) {
+            $client = $container->get('test.client');
+        }
 
         $this->em   = $container->get('doctrine.orm.default_entity_manager');
         $this->user = $this->em->getReference(User::class, 1);
