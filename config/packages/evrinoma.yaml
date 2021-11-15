@@ -26,8 +26,8 @@ safety:
 #    ur.ite-ng.ru:
 #      - { host: "ldap://ur04.ur.ite-ng.ru", port: "636", search: "OU=ekaterinburg,DC=ur,DC=ite-ng,DC=ru" }
 #      - { host: "ldap://ur05.ur.ite-ng.ru", port: "636", search: "OU=ekaterinburg,DC=ur,DC=ite-ng,DC=ru" }
-  token: false
-#    jwt:
-#      access_ttl: '%env(resolve:JWT_ACCESS_TOKEN_TTL)%'
-#      refresh_ttl: '%env(JWT_REFRESH_TOKEN_TTL)%'
-#      domain: '%env(JWT_DOMAIN)%'
+  token:
+    jwt:
+      access_ttl: '%env(resolve:JWT_ACCESS_TOKEN_TTL)%'
+      refresh_ttl: '%env(JWT_REFRESH_TOKEN_TTL)%'
+      domain: '%env(JWT_DOMAIN)%'

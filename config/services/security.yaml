@@ -1,0 +1,6 @@
+services:
+  App\Security\AccessControlSystem\AccessControl:
+    autowire: true
+
+  Evrinoma\SecurityBundle\AccessControl\AccessControlInterface:
+    alias: App\Security\AccessControlSystem\AccessControl

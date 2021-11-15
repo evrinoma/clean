@@ -18,6 +18,14 @@ security:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
+        jwt:
+            pattern: ^/evrinoma/api/
+            stateless: true
+            guard:
+                entry_point: Evrinoma\SecurityBundle\Guard\JWT\AuthenticatorGuard
+                authenticators:
+                    - Evrinoma\SecurityBundle\Guard\JWT\AuthenticatorGuard
+                    - Evrinoma\SecurityBundle\Guard\Session\AuthenticatorGuard
         main:
             provider: core_provider
             access_denied_url: core_home
