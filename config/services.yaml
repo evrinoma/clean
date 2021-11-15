@@ -7,8 +7,8 @@ parameters:
     locale: 'en'
     mailer_user: "evrinoma@gmail.com"
 
-imports:
-    - { resource: 'packages/evrinoma.yaml' }
+#imports:
+#    - { resource: 'packages/evrinoma.yaml' }
 
 services:
     # default configuration for services in *this* file
@@ -28,6 +28,7 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
             - '../src/Tests/'
+            - '../src/Menu/**/*Menu.php'
 
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
@@ -38,9 +39,11 @@ services:
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
 
-    App\Menu\ApiDocMenu:
-        tags: [ 'evrinoma.menu' ]
+#    App\Menu\ApiDocMenu:
+#        tags: [ 'evrinoma.menu' ]
+#
+#    App\Menu\ServiceMenu:
+#        tags: [ 'evrinoma.menu' ]
 
-    App\Menu\ServiceMenu:
-        tags: [ 'evrinoma.menu' ]
-
+imports:
+    - { resource: services/ }
