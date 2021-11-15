@@ -20,7 +20,11 @@ trait AuthorizationTrait
 //region SECTION: Protected
     protected function getAuthorizationClient(): AbstractBrowser
     {
-        $client = static::createClient();
+        static $client;
+
+        if (!static::$booted) {
+            $client = static::createClient();
+        }
 
         $container = $client->getContainer();
 
