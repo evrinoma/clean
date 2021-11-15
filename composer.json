@@ -20,6 +20,7 @@
         "evrinoma/utils-bundle": "dev-master",
         "friendsofsymfony/jsrouting-bundle": "^2.7",
         "friendsofsymfony/rest-bundle": "^3.0",
+        "lexik/jwt-authentication-bundle": "^2.14",
         "nelmio/api-doc-bundle": "dev-master",
         "phpdocumentor/reflection-docblock": "^5.2",
         "sensio/framework-extra-bundle": "^5.3",
