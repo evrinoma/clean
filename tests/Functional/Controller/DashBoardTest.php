@@ -3,11 +3,10 @@
 namespace App\Tests\Functional\Controller;
 
 use App\Tests\Functional\CaseTest;
-use Evrinoma\TestUtilsBundle\Browser\ApiBrowserTestInterface;
 use Evrinoma\TestUtilsBundle\Controller\ApiControllerTestInterface;
 use Symfony\Component\HttpFoundation\Response;
 
-final class DashBoardTest extends CaseTest implements ApiControllerTestInterface, ApiBrowserTestInterface
+final class DashBoardTest extends CaseTest implements ApiControllerTestInterface
 {
 //region SECTION: Fields
     public const API_GET      = '/evrinoma/api/dashboard/status';

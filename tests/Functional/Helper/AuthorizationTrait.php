@@ -8,6 +8,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Evrinoma\SecurityBundle\Model\SecurityModelInterface;
 use Symfony\Component\BrowserKit\AbstractBrowser;
 use Symfony\Component\BrowserKit\Cookie;
+use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 trait AuthorizationTrait
@@ -20,14 +21,19 @@ trait AuthorizationTrait
 //region SECTION: Protected
     protected function getAuthorizationClient(): AbstractBrowser
     {
-        static $client;
-
         if (!static::$booted) {
-            $client = static::createClient();
-        }
-
-        if (($container = $this->getContainer()) && !$client) {
-            $client = $container->get('test.client');
+            $client    = static::createClient();
+            $container = $client->getContainer();
+        } else {
+            if ($this->checkSymfonyVersion()) {
+                if (($container = $this->getContainer()) && $container->has('test.client')) {
+                    $client = $container->get('test.client');
+                }
+            } else {
+                if (static::$container && static::$container->has('test.client')) {
+                    $client = static::$container->get('test.client');
+                }
+            }
         }
 
         $this->em   = $container->get('doctrine.orm.default_entity_manager');
@@ -55,4 +61,18 @@ trait AuthorizationTrait
         $this->em->flush();
     }
 //endregion Protected
+
+//region SECTION: Private
+    private function checkSymfonyVersion(): bool
+    {
+//        preg_match('/^(^\d+.\d+.)/', Kernel::VERSION, $output);
+//        if (count($output)) {
+//            return (int)preg_replace("/[^0-9]/", "", $output[0]) >= 53;
+//        }
+//
+//        return false;
+
+        return Kernel::VERSION_ID >= 50300;
+    }
+//endregion Private
 }

@@ -3,10 +3,9 @@
 namespace App\Tests\Functional\Controller;
 
 use App\Tests\Functional\CaseTest;
-use Evrinoma\TestUtilsBundle\Browser\ApiBrowserTestInterface;
 use Evrinoma\TestUtilsBundle\Controller\ApiControllerTestInterface;
 
-final class InitialTest extends CaseTest implements ApiControllerTestInterface, ApiBrowserTestInterface
+final class InitialTest extends CaseTest implements ApiControllerTestInterface
 {
 //region SECTION: Fields
     public const API_GET      = 'ApiControllerTest::API_GET';
