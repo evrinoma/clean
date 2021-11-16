@@ -31,7 +31,8 @@ trait AuthorizationTrait
                 }
             } else {
                 if (static::$container && static::$container->has('test.client')) {
-                    $client = static::$container->get('test.client');
+                    $container = static::$container;
+                    $client = $container->get('test.client');
                 }
             }
         }
