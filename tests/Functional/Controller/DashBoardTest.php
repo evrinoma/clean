@@ -3,6 +3,7 @@
 namespace App\Tests\Functional\Controller;
 
 use App\Tests\Functional\CaseTest;
+use App\Tests\Functional\DataFixtures\FixtureInterface;
 use Evrinoma\TestUtilsBundle\Controller\ApiControllerTestInterface;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -22,11 +23,15 @@ final class DashBoardTest extends CaseTest implements ApiControllerTestInterface
         return [];
     }
 
+    protected function getEntityClass(): string
+    {
+        return static::class;
+    }
 //endregion Protected
 
-//region SECTION: Public
-
 //endregion Private
+
+//region SECTION: Public
     public function testGet(): void
     {
         $response = $this->queryGet([]);
@@ -106,7 +111,7 @@ final class DashBoardTest extends CaseTest implements ApiControllerTestInterface
 //region SECTION: Getters/Setters
     public static function getFixtures(): array
     {
-        return [];
+        return [FixtureInterface::FOS_USER_FIXTURES];
     }
 
     public static function getDtoClass(): string

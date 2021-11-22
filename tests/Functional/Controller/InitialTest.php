@@ -3,6 +3,7 @@
 namespace App\Tests\Functional\Controller;
 
 use App\Tests\Functional\CaseTest;
+use App\Tests\Functional\DataFixtures\FixtureInterface;
 use Evrinoma\TestUtilsBundle\Controller\ApiControllerTestInterface;
 
 final class InitialTest extends CaseTest implements ApiControllerTestInterface
@@ -23,11 +24,15 @@ final class InitialTest extends CaseTest implements ApiControllerTestInterface
         return $data;
     }
 
+    protected function getEntityClass(): string
+    {
+        return static::class;
+    }
 //endregion Protected
 
-//region SECTION: Public
-
 //endregion Private
+
+//region SECTION: Public
     public function testGet(): void
     {
         $this->markTestIncomplete('This test has not been implemented yet.');
@@ -96,7 +101,7 @@ final class InitialTest extends CaseTest implements ApiControllerTestInterface
 //region SECTION: Getters/Setters
     public static function getFixtures(): array
     {
-        return [];
+        return [FixtureInterface::FOS_USER_FIXTURES];
     }
 
     public static function getDtoClass(): string
