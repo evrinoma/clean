@@ -1,0 +1,7 @@
+services:
+  app.fos.fixtures.user:
+    class: App\Tests\Functional\DataFixtures\FosUserFixtures
+    tags:
+      - { name: doctrine.fixture.orm }
+
+
