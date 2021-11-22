@@ -9511,12 +9511,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/TestUtilsBundle.git",
-                "reference": "dc20efc32136922032d718bee2978417914d7b70"
+                "reference": "9814f231b18f6fdf666eaac090829f7636055da7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/TestUtilsBundle/zipball/dc20efc32136922032d718bee2978417914d7b70",
-                "reference": "dc20efc32136922032d718bee2978417914d7b70",
+                "url": "https://api.github.com/repos/evrinoma/TestUtilsBundle/zipball/9814f231b18f6fdf666eaac090829f7636055da7",
+                "reference": "9814f231b18f6fdf666eaac090829f7636055da7",
                 "shasum": ""
             },
             "require": {
@@ -9547,7 +9547,7 @@
                 "source": "https://github.com/evrinoma/TestUtilsBundle/tree/master",
                 "issues": "https://github.com/evrinoma/TestUtilsBundle/issues"
             },
-            "time": "2021-11-14T15:36:13+00:00"
+            "time": "2021-11-22T15:37:08+00:00"
         },
         {
             "name": "myclabs/deep-copy",
