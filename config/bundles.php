@@ -27,4 +27,5 @@ return [
     Evrinoma\SecurityBundle\EvrinomaSecurityBundle::class => ['all' => true],
     Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
     Evrinoma\TestUtilsBundle\EvrinomaTestUtilsBundle::class => ['dev' => true, 'test' => true],
+    Evrinoma\ExchangeRateBundle\EvrinomaExchangeRateBundle::class => ['all' => true],
 ];

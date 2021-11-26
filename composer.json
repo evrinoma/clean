@@ -14,6 +14,7 @@
         "doctrine/doctrine-migrations-bundle": "^3.0",
         "doctrine/orm": "^2.10",
         "evrinoma/dashboard-bundle": "dev-master",
+        "evrinoma/exchange-rate-bundle": "dev-master",
         "evrinoma/menu-bundle": "dev-master",
         "evrinoma/security-bundle": "dev-master",
         "evrinoma/user-bundle": "^2.1",
@@ -117,6 +118,14 @@
             "type": "vcs",
             "url": "https://github.com/evrinoma/DtoBundle.git"
         },
+        "dto-common": {
+            "type": "vcs",
+            "url": "https://github.com/evrinoma/DtoCommon.git"
+        },
+        "exchange-rate": {
+            "type": "vcs",
+            "url": "https://github.com/evrinoma/ExchangeRateBundle.git"
+        },
         "menu": {
             "type": "vcs",
             "url": "https://github.com/evrinoma/MenuBundle.git"
@@ -129,7 +138,7 @@
             "type": "vcs",
             "url": "https://github.com/evrinoma/UtilsBundle.git"
         },
-        "security-bundle": {
+        "security": {
             "type": "vcs",
             "url": "https://github.com/evrinoma/SecurityBundle.git"
         },
