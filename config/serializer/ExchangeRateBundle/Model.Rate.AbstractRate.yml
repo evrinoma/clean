@@ -16,4 +16,26 @@ Evrinoma\ExchangeRateBundle\Model\Rate\AbstractRate:
       groups: [
           api_get_rate, api_post_rate, api_put_rate, app_get_basic_rate
       ]
-
+    base:
+      type: Evrinoma\ExchangeRateBundle\Model\Type\TypeInterface
+      groups: [
+          api_get_rate, api_post_rate, api_put_rate, app_get_basic_rate
+      ]
+      expose: true
+    type:
+      type: Evrinoma\ExchangeRateBundle\Model\Type\TypeInterface
+      groups: [
+          api_get_rate, api_post_rate, api_put_rate, app_get_basic_rate
+      ]
+      expose: true
+    value:
+      type: float
+      groups: [
+          api_get_rate, api_post_rate, api_put_rate, app_get_basic_rate
+      ]
+      expose: true
+    created:
+      type: DateTimeImmutable<'Y-m-d H:i'>
+      groups: [
+          api_get_rate, api_post_rate, api_put_rate , app_get_basic_rate
+      ]
