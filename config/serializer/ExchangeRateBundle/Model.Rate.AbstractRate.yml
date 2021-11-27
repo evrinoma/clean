@@ -1,0 +1,19 @@
+Evrinoma\ExchangeRateBundle\Model\Rate\AbstractRate:
+  exclusion_policy: ALL
+  properties:
+    id:
+      groups: [
+          api_get_rate, api_post_rate, api_put_rate, app_get_basic_rate
+      ]
+      expose: true
+    createdAt:
+      type: DateTimeImmutable<'Y-m-d H:i'>
+      groups: [
+          api_get_rate, api_post_rate, api_put_rate , app_get_basic_rate
+      ]
+    updatedAt:
+      type: DateTimeImmutable<'Y-m-d H:i'>
+      groups: [
+          api_get_rate, api_post_rate, api_put_rate, app_get_basic_rate
+      ]
+
