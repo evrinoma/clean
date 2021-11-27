@@ -1655,12 +1655,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/ExchangeRateBundle.git",
-                "reference": "288ebc6b0b544aafdfe84c1d630527dca3d96ca2"
+                "reference": "b676fd7afd1065019b4eabd1af08a7e00c0b167c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/ExchangeRateBundle/zipball/288ebc6b0b544aafdfe84c1d630527dca3d96ca2",
-                "reference": "288ebc6b0b544aafdfe84c1d630527dca3d96ca2",
+                "url": "https://api.github.com/repos/evrinoma/ExchangeRateBundle/zipball/b676fd7afd1065019b4eabd1af08a7e00c0b167c",
+                "reference": "b676fd7afd1065019b4eabd1af08a7e00c0b167c",
                 "shasum": ""
             },
             "require": {
@@ -1715,7 +1715,7 @@
                 "source": "https://github.com/evrinoma/ExchangeRateBundle/tree/master",
                 "issues": "https://github.com/evrinoma/ExchangeRateBundle/issues"
             },
-            "time": "2021-11-26T18:55:58+00:00"
+            "time": "2021-11-27T14:45:58+00:00"
         },
         {
             "name": "evrinoma/menu-bundle",
@@ -1723,12 +1723,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/MenuBundle.git",
-                "reference": "b47b6a40dd2b1a5e67aab94bf99018d25631df42"
+                "reference": "7b9bbd89cbd60c5160b67ec1f70e7b64507b94c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/MenuBundle/zipball/b47b6a40dd2b1a5e67aab94bf99018d25631df42",
-                "reference": "b47b6a40dd2b1a5e67aab94bf99018d25631df42",
+                "url": "https://api.github.com/repos/evrinoma/MenuBundle/zipball/7b9bbd89cbd60c5160b67ec1f70e7b64507b94c1",
+                "reference": "7b9bbd89cbd60c5160b67ec1f70e7b64507b94c1",
                 "shasum": ""
             },
             "require": {
@@ -1765,7 +1765,7 @@
                 "source": "https://github.com/evrinoma/MenuBundle/tree/master",
                 "issues": "https://github.com/evrinoma/MenuBundle/issues"
             },
-            "time": "2021-11-14T19:56:03+00:00"
+            "time": "2021-11-27T15:31:42+00:00"
         },
         {
             "name": "evrinoma/security-bundle",
@@ -1773,12 +1773,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/SecurityBundle.git",
-                "reference": "e4ac3feed62d9e695e9372266eb474e89cab9baf"
+                "reference": "c3b31c29b69728e9bc8e15fd4a7b3e8106344f5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/SecurityBundle/zipball/e4ac3feed62d9e695e9372266eb474e89cab9baf",
-                "reference": "e4ac3feed62d9e695e9372266eb474e89cab9baf",
+                "url": "https://api.github.com/repos/evrinoma/SecurityBundle/zipball/c3b31c29b69728e9bc8e15fd4a7b3e8106344f5f",
+                "reference": "c3b31c29b69728e9bc8e15fd4a7b3e8106344f5f",
                 "shasum": ""
             },
             "require": {
@@ -1816,7 +1816,7 @@
                 "source": "https://github.com/evrinoma/SecurityBundle/tree/master",
                 "issues": "https://github.com/evrinoma/SecurityBundle/issues"
             },
-            "time": "2021-11-14T18:43:17+00:00"
+            "time": "2021-11-23T20:32:19+00:00"
         },
         {
             "name": "evrinoma/shell-bundle",

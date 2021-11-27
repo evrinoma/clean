@@ -105,6 +105,12 @@
     "evrinoma/dto-bundle": {
         "version": "dev-master"
     },
+    "evrinoma/dto-common": {
+        "version": "dev-master"
+    },
+    "evrinoma/exchange-rate-bundle": {
+        "version": "dev-master"
+    },
     "evrinoma/menu-bundle": {
         "version": "dev-master"
     },
