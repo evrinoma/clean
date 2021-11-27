@@ -3,3 +3,6 @@ dashboard:
 
 menu:
   resource: "@EvrinomaMenuBundle/Resources/config/routes.yml"
+
+exchange_rate:
+  resource: "@EvrinomaExchangeRateBundle/Resources/config/routes.yml"
