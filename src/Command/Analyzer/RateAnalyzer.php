@@ -2,8 +2,6 @@
 
 namespace App\Command\Analyzer;
 
-
-use App\Fetch\Analyzer\AbstractAnalyzer;
 use Doctrine\ORM\EntityManagerInterface;
 use Evrinoma\ExchangeRateBundle\Dto\Preserve\RateApiDto;
 use Evrinoma\ExchangeRateBundle\Dto\Preserve\RateApiDtoInterface;
@@ -12,6 +10,7 @@ use Evrinoma\ExchangeRateBundle\Dto\TypeApiDtoInterface;
 use Evrinoma\ExchangeRateBundle\Manager\Rate\CommandManager as RateCommandManager;
 use Evrinoma\ExchangeRateBundle\Manager\Type\QueryManager as TypeQueryManager;
 use Evrinoma\ExchangeRateBundle\Model\Type\TypeInterface;
+use Evrinoma\FetchBundle\Analyzer\AbstractAnalyzer;
 
 class RateAnalyzer extends AbstractAnalyzer
 {

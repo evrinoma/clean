@@ -2,7 +2,8 @@
 
 namespace App\Command\Fetch\Handler;
 
-use App\Fetch\Handler\AbstractHandler;
+
+use Evrinoma\FetchBundle\Handler\AbstractHandler;
 
 class DummyHandler extends AbstractHandler
 {

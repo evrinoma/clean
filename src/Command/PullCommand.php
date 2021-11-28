@@ -4,9 +4,9 @@ namespace App\Command;
 
 use App\Command\Fetch\Description\DummyDescription;
 use App\Command\Fetch\Handler\DummyHandler;
-use App\Fetch\Analyzer\AnalyzerInterface;
-use App\Fetch\Handler\HandlerInterface;
 use Evrinoma\ExchangeRateBundle\EvrinomaExchangeRateBundle;
+use Evrinoma\FetchBundle\Analyzer\AnalyzerInterface;
+use Evrinoma\FetchBundle\Handler\HandlerInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;

@@ -2,10 +2,9 @@
 
 namespace App\Command\Fetch\Description;
 
-
-use App\Fetch\Description\AbstractDescription;
-use App\Fetch\Exception\Description\CommunicationException;
-use App\Fetch\Exception\Description\DescriptionNotValidException;
+use Evrinoma\FetchBundle\Description\AbstractDescription;
+use Evrinoma\FetchBundle\Exception\Description\CommunicationException;
+use Evrinoma\FetchBundle\Exception\Description\DescriptionNotValidException;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class FixerDescription extends AbstractDescription

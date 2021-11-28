@@ -2,13 +2,12 @@
 
 namespace App\Command\Analyzer;
 
-
-use App\Fetch\Analyzer\AbstractAnalyzer;
 use Doctrine\ORM\EntityManagerInterface;
 use Evrinoma\ExchangeRateBundle\Dto\Preserve\TypeApiDto;
 use Evrinoma\ExchangeRateBundle\Dto\TypeApiDtoInterface;
 use Evrinoma\ExchangeRateBundle\Manager\Type\CommandManager;
 use Evrinoma\ExchangeRateBundle\Manager\Type\QueryManager;
+use Evrinoma\FetchBundle\Analyzer\AbstractAnalyzer;
 
 class TypeAnalyzer extends AbstractAnalyzer
 {
