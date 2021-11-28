@@ -2,27 +2,29 @@
 
 namespace App\Command;
 
-use App\Command\Fetch\Description\DummyDescription;
-use App\Command\Fetch\Handler\DummyHandler;
 use Evrinoma\ExchangeRateBundle\EvrinomaExchangeRateBundle;
 use Evrinoma\FetchBundle\Analyzer\AnalyzerInterface;
 use Evrinoma\FetchBundle\Handler\HandlerInterface;
+use Evrinoma\FetchBundle\Manager\FetchManagerInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 final class PullCommand extends Command
 {
 //region SECTION: Fields
-    protected static          $defaultName = 'app:'.EvrinomaExchangeRateBundle::EXCHANGE_RATE_BUNDLE.':pull';
-    private AnalyzerInterface $typeAnalyzer;
-    private AnalyzerInterface $rateAnalyzer;
+    protected static              $defaultName = 'app:'.EvrinomaExchangeRateBundle::EXCHANGE_RATE_BUNDLE.':pull';
+    private AnalyzerInterface     $typeAnalyzer;
+    private AnalyzerInterface     $rateAnalyzer;
+    private FetchManagerInterface $manager;
 //endregion Fields
 
 //region SECTION: Constructor
-    public function __construct(AnalyzerInterface $typeAnalyzer, AnalyzerInterface $rateAnalyzer)
+    public function __construct(FetchManagerInterface $manager, AnalyzerInterface $typeAnalyzer, AnalyzerInterface $rateAnalyzer)
     {
         parent::__construct();
+        $this->manager      = $manager;
         $this->typeAnalyzer = $typeAnalyzer;
         $this->rateAnalyzer = $rateAnalyzer;
     }
@@ -46,6 +48,8 @@ The <info>evrinoma:menu:create</info> command pull exchange rate data and save i
   <info>php %command.full_name%</info>
 EOT
             );
+        $this->addOption('description', 'desc', InputOption::VALUE_REQUIRED, 'Configuration data source');
+        $this->addOption('handler', 'hdl', InputOption::VALUE_REQUIRED, 'Handler processor');
     }
 
     /**
@@ -53,17 +57,25 @@ EOT
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        //@TODO refactor
-        $handler = new DummyHandler(new DummyDescription());
+        $handler     = $input->getOption('handler');
+        $description = $input->getOption('description');
 
-        try {
-            $this->analizers($handler->run(), $output);
-        } catch (\Exception $e) {
-            $output->writeln(['xxxxxxxxxxxx']);
-            return Command::FAILURE;
+        if ($handler && $description) {
+            try {
+                $handler = $this->manager->getHandler($handler, $description);
+
+                $this->analizers($handler->run(), $output);
+            } catch (\Exception $e) {
+                $output->writeln(['xxxxxxxxxxxx', $e->getMessage(), 'xxxxxxxxxxxx']);
+
+                return Command::FAILURE;
+            }
+        } else {
+            $output->writeln(['handler and description not set']);
         }
 
         $output->writeln(['============']);
+
         return Command::SUCCESS;
     }
 

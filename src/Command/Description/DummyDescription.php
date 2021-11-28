@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Command\Fetch\Description;
+namespace App\Command\Description;
 
+use App\Command\Handler\DummyHandler;
 use Evrinoma\FetchBundle\Description\AbstractDescription;
 use Evrinoma\FetchBundle\Exception\Description\CommunicationException;
 use Evrinoma\FetchBundle\Exception\Description\DescriptionNotValidException;
@@ -28,6 +29,19 @@ class DummyDescription extends AbstractDescription
     public function configure(): bool
     {
         return true;
+    }
+
+    /**
+     * @return string
+     */
+    public function tag(): string
+    {
+        return DummyHandler::class;
+    }
+
+    public function name(): string
+    {
+        return 'dummy';
     }
 //endregion Public
 }

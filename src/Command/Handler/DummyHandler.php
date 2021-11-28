@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Command\Fetch\Handler;
+namespace App\Command\Handler;
 
 
 use Evrinoma\FetchBundle\Handler\AbstractHandler;
@@ -12,6 +12,11 @@ class DummyHandler extends AbstractHandler
     public function isValid(): bool
     {
         return array_key_exists('success', $this->data) && $this->data['success'];
+    }
+
+    public function name(): string
+    {
+        return 'dummy';
     }
 //endregion Public
 }

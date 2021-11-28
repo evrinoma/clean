@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Command\Fetch\Description;
+namespace App\Command\Description;
 
+use App\Command\Handler\DummyHandler;
 use Evrinoma\FetchBundle\Description\AbstractDescription;
 use Evrinoma\FetchBundle\Exception\Description\CommunicationException;
 use Evrinoma\FetchBundle\Exception\Description\DescriptionNotValidException;
@@ -9,13 +10,18 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class FixerDescription extends AbstractDescription
 {
+//region SECTION: Fields
     private HttpClientInterface $client;
+//endregion Fields
 
+//region SECTION: Constructor
     public function __construct(HttpClientInterface $client)
     {
         $this->client = $client;
     }
+//endregion Constructor
 //region SECTION: Public
+
     /**
      * @return array
      * @throws CommunicationException
@@ -40,6 +46,19 @@ class FixerDescription extends AbstractDescription
     public function configure(): bool
     {
         return true;
+    }
+
+    /**
+     * @return string
+     */
+    public function tag(): string
+    {
+        return DummyHandler::class;
+    }
+
+    public function name(): string
+    {
+        return 'fixer';
     }
 //endregion Public
 }
