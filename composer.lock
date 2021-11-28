@@ -1655,12 +1655,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/ExchangeRateBundle.git",
-                "reference": "b676fd7afd1065019b4eabd1af08a7e00c0b167c"
+                "reference": "92532a121d90277be9ad77da64940fa93e4ee56b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/ExchangeRateBundle/zipball/b676fd7afd1065019b4eabd1af08a7e00c0b167c",
-                "reference": "b676fd7afd1065019b4eabd1af08a7e00c0b167c",
+                "url": "https://api.github.com/repos/evrinoma/ExchangeRateBundle/zipball/92532a121d90277be9ad77da64940fa93e4ee56b",
+                "reference": "92532a121d90277be9ad77da64940fa93e4ee56b",
                 "shasum": ""
             },
             "require": {
@@ -1715,7 +1715,7 @@
                 "source": "https://github.com/evrinoma/ExchangeRateBundle/tree/master",
                 "issues": "https://github.com/evrinoma/ExchangeRateBundle/issues"
             },
-            "time": "2021-11-27T14:45:58+00:00"
+            "time": "2021-11-28T13:46:15+00:00"
         },
         {
             "name": "evrinoma/fetch-bundle",
@@ -1723,12 +1723,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/FetchBundle.git",
-                "reference": "43d9fc1819d44a06fdfc910a00226f0cd01e6090"
+                "reference": "9a00287bd385cd4b0a1a1bd30c807dda3ea12b99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/FetchBundle/zipball/43d9fc1819d44a06fdfc910a00226f0cd01e6090",
-                "reference": "43d9fc1819d44a06fdfc910a00226f0cd01e6090",
+                "url": "https://api.github.com/repos/evrinoma/FetchBundle/zipball/9a00287bd385cd4b0a1a1bd30c807dda3ea12b99",
+                "reference": "9a00287bd385cd4b0a1a1bd30c807dda3ea12b99",
                 "shasum": ""
             },
             "require": {
@@ -1781,7 +1781,7 @@
                 "source": "https://github.com/evrinoma/FetchBundle/tree/master",
                 "issues": "https://github.com/evrinoma/FetchBundle/issues"
             },
-            "time": "2021-11-28T11:13:03+00:00"
+            "time": "2021-11-28T13:48:22+00:00"
         },
         {
             "name": "evrinoma/menu-bundle",
