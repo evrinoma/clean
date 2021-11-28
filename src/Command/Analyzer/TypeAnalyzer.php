@@ -3,14 +3,14 @@
 namespace App\Command\Analyzer;
 
 
-use App\Fetch\Analyzer\AnalyzerInterface;
+use App\Fetch\Analyzer\AbstractAnalyzer;
 use Doctrine\ORM\EntityManagerInterface;
 use Evrinoma\ExchangeRateBundle\Dto\Preserve\TypeApiDto;
 use Evrinoma\ExchangeRateBundle\Dto\TypeApiDtoInterface;
 use Evrinoma\ExchangeRateBundle\Manager\Type\CommandManager;
 use Evrinoma\ExchangeRateBundle\Manager\Type\QueryManager;
 
-class TypeAnalyzer implements AnalyzerInterface
+class TypeAnalyzer extends AbstractAnalyzer
 {
 //region SECTION: Fields
     private QueryManager           $typeQueryManager;
@@ -28,34 +28,34 @@ class TypeAnalyzer implements AnalyzerInterface
 //endregion Constructor
 
 //region SECTION: Public
-    public function doAnalyze(array $data)
+    public function doAnalyze()
     {
-        $diff  = [];
         $dto   = new TypeApiDto();
         $types = $this->typeQueryManager->criteria($dto);
+
         /** @var TypeApiDtoInterface $type */
         foreach ($types as $type) {
             $identity = $type->getIdentity();
-            if (in_array($identity, $data)) {
-                unset($data[$identity]);
+            if ($this->get($identity)) {
+                $this->rm($identity);
             }
         }
 
         try {
             $this->manager->transactional(
-                function () use ($dto, $data) {
-                    foreach ($data as $item) {
-                        $dto->setIdentity($item);
+                function () use ($dto) {
+                    foreach ($this->all() as $identity => $item) {
+                        $dto->setIdentity($identity);
                         try {
-                            $this->typeCommandManager->post($dto);
+                            $value = $this->typeCommandManager->post($dto);
                         } catch (\Exception $e) {
-                            $message[] = $e->getCode();
+                            $this->addError((string)$e->getCode());
                         }
                     }
                 }
             );
         } catch (\Exception $e) {
-            $message[] = $e->getCode();
+            $this->addError((string)$e->getCode());
         }
     }
 //endregion Public

@@ -13,22 +13,4 @@ class DummyHandler extends AbstractHandler
         return array_key_exists('success', $this->data) && $this->data['success'];
     }
 //endregion Public
-
-//region SECTION: Getters/Setters
-    public function getData(): \Generator
-    {
-        foreach ($this->data['rates'] as $key => $value) {
-            yield $key => $value;
-        }
-    }
-
-    public function getHeader(): \Generator
-    {
-        foreach ($this->data as $key => $value) {
-            if ($key != 'rates') {
-                yield $key => $value;
-            }
-        }
-    }
-//endregion Getters/Setters
 }

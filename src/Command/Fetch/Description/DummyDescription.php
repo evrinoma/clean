@@ -3,7 +3,6 @@
 namespace App\Command\Fetch\Description;
 
 
-
 use App\Fetch\Description\AbstractDescription;
 use App\Fetch\Exception\Description\CommunicationException;
 use App\Fetch\Exception\Description\DescriptionNotValidException;

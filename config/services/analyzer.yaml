@@ -1,0 +1,22 @@
+services:
+  app.exchange_rate.type.analyzer:
+    class: App\Command\Analyzer\TypeAnalyzer
+    arguments:
+      - "@doctrine.orm.default_entity_manager"
+      - "@evrinoma.exchange_rate.type.query.manager"
+      - "@evrinoma.exchange_rate.type.command.manager"
+
+  App\Command\Analyzer\TypeAnalyzer:
+    alias: app.exchange_rate.type.analyzer
+    public: true
+
+  app.exchange_rate.rate.analyzer:
+    class: App\Command\Analyzer\RateAnalyzer
+    arguments:
+      - "@doctrine.orm.default_entity_manager"
+      - "@evrinoma.exchange_rate.type.query.manager"
+      - "@evrinoma.exchange_rate.rate.command.manager"
+
+  App\Command\Analyzer\RateAnalyzer:
+    alias: app.exchange_rate.rate.analyzer
+    public: true
