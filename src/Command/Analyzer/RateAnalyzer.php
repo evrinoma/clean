@@ -59,6 +59,7 @@ class RateAnalyzer extends AbstractAnalyzer
                     );
                 } catch (\Exception $e) {
                     $this->addError((string)$e->getCode());
+                    throw $e;
                 }
             }
         }
