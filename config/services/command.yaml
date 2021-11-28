@@ -2,6 +2,7 @@ services:
   app.exchange_rate.rate.command.pull:
     class: App\Command\PullCommand
     arguments:
+      - '@evrinoma.fetch.manager.fetch'
       - '@app.exchange_rate.type.analyzer'
       - '@app.exchange_rate.rate.analyzer'
     tags: { - name: console.command }'

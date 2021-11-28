@@ -1,0 +1,15 @@
+services:
+  App\Command\Description\DummyDescription:
+    tags:
+      - { name: 'evrinoma.fetch.description' }
+
+  App\Command\Description\FixerDescription:
+    arguments:
+      - '@http_client'
+    tags:
+      - { name: 'evrinoma.fetch.description' }
+
+
+  App\Command\Handler\DummyHandler:
+    tags:
+      - { name: 'evrinoma.fetch.handler' }
