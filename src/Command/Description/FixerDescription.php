@@ -28,6 +28,7 @@ class FixerDescription extends AbstractDescription
      */
     public function load(): array
     {
+        //@TODO think about env
         $response = $this->client->request(
             'GET',
             'http://data.fixer.io/api/latest?access_key=7539b4b41544dd93773c2d1aa9f60311&format=1'
