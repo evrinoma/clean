@@ -22,7 +22,9 @@ node_modules
 
 /ExchangeRateBundle/
 /MenuBundle/
+/FetchBundle/
 
 ExchangeRateBundle
 MenuBundle
+FetchBundle
 
