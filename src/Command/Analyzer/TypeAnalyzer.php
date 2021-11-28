@@ -5,6 +5,7 @@ namespace App\Command\Analyzer;
 use Doctrine\ORM\EntityManagerInterface;
 use Evrinoma\ExchangeRateBundle\Dto\Preserve\TypeApiDto;
 use Evrinoma\ExchangeRateBundle\Dto\TypeApiDtoInterface;
+use Evrinoma\ExchangeRateBundle\Exception\Type\TypeNotFoundException;
 use Evrinoma\ExchangeRateBundle\Manager\Type\CommandManager;
 use Evrinoma\ExchangeRateBundle\Manager\Type\QueryManager;
 use Evrinoma\FetchBundle\Analyzer\AbstractAnalyzer;
@@ -29,17 +30,19 @@ class TypeAnalyzer extends AbstractAnalyzer
 //region SECTION: Public
     public function doAnalyze()
     {
-        $dto   = new TypeApiDto();
-        $types = $this->typeQueryManager->criteria($dto);
-
-        /** @var TypeApiDtoInterface $type */
-        foreach ($types as $type) {
-            $identity = $type->getIdentity();
-            if ($this->get($identity)) {
-                $this->rm($identity);
+        $dto = new TypeApiDto();
+        try {
+            $types = $this->typeQueryManager->criteria($dto);
+            /** @var TypeApiDtoInterface $type */
+            foreach ($types as $type) {
+                $identity = $type->getIdentity();
+                if ($this->get($identity)) {
+                    $this->rm($identity);
+                }
             }
-        }
+        } catch (TypeNotFoundException $e) {
 
+        }
         try {
             $this->manager->transactional(
                 function () use ($dto) {
