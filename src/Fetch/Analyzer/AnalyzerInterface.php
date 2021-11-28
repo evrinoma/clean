@@ -2,9 +2,11 @@
 
 namespace App\Fetch\Analyzer;
 
-interface AnalyzerInterface
+use App\Fetch\Registry\RegistryInterface;
+
+interface AnalyzerInterface extends RegistryInterface
 {
 //region SECTION: Public
-    public function doAnalyze(array $data);
+    public function doAnalyze();
 //endregion Public
 }
