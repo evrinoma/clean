@@ -15,10 +15,6 @@ interface HandlerInterface
 //endregion Public
 
 //region SECTION: Getters/Setters
-    public function getData(): \Generator;
-
-    public function getHeader(): \Generator;
-
     public function getRaw(): array;
 //endregion Getters/Setters
 }
