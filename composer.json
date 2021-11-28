@@ -15,6 +15,7 @@
         "doctrine/orm": "^2.10",
         "evrinoma/dashboard-bundle": "dev-master",
         "evrinoma/exchange-rate-bundle": "dev-master",
+        "evrinoma/fetch-bundle": "dev-master",
         "evrinoma/menu-bundle": "dev-master",
         "evrinoma/security-bundle": "dev-master",
         "evrinoma/user-bundle": "^2.1",
@@ -125,6 +126,10 @@
         "exchange-rate": {
             "type": "vcs",
             "url": "https://github.com/evrinoma/ExchangeRateBundle.git"
+        },
+        "fetch": {
+            "type": "vcs",
+            "url": "https://github.com/evrinoma/FetchBundle.git"
         },
         "menu": {
             "type": "vcs",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c768803e17ed31df81ba0db31804469",
+    "content-hash": "810975117bc05f3f2b804a4f5ddea28e",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -1716,6 +1716,72 @@
                 "issues": "https://github.com/evrinoma/ExchangeRateBundle/issues"
             },
             "time": "2021-11-27T14:45:58+00:00"
+        },
+        {
+            "name": "evrinoma/fetch-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/evrinoma/FetchBundle.git",
+                "reference": "43d9fc1819d44a06fdfc910a00226f0cd01e6090"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/evrinoma/FetchBundle/zipball/43d9fc1819d44a06fdfc910a00226f0cd01e6090",
+                "reference": "43d9fc1819d44a06fdfc910a00226f0cd01e6090",
+                "shasum": ""
+            },
+            "require": {
+                "evrinoma/utils-bundle": "dev-master",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.0",
+                "doctrine/doctrine-bundle": "^2.1",
+                "doctrine/doctrine-fixtures-bundle": "^3.4",
+                "doctrine/doctrine-migrations-bundle": "^3.0",
+                "doctrine/orm": "^2.8",
+                "evrinoma/test-utils-bundle": "dev-master",
+                "friendsofsymfony/rest-bundle": "^3",
+                "jms/serializer-bundle": "^3.1",
+                "nelmio/api-doc-bundle": "^4",
+                "phpunit/phpunit": "^9.5.2",
+                "symfony/browser-kit": "^5.2",
+                "symfony/dotenv": "5.2.*",
+                "symfony/form": "5.2.*",
+                "symfony/intl": "5.3.*",
+                "symfony/phpunit-bridge": "^5.0",
+                "symfony/validator": "5.2.*",
+                "symfony/yaml": "^5.0"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Evrinoma\\FetchBundle\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolay Nikolaev",
+                    "email": "evrinoma@gmail.com"
+                }
+            ],
+            "description": "Fetch",
+            "keywords": [
+                "Fetch"
+            ],
+            "support": {
+                "source": "https://github.com/evrinoma/FetchBundle/tree/master",
+                "issues": "https://github.com/evrinoma/FetchBundle/issues"
+            },
+            "time": "2021-11-28T11:13:03+00:00"
         },
         {
             "name": "evrinoma/menu-bundle",
@@ -11937,6 +12003,7 @@
     "stability-flags": {
         "evrinoma/dashboard-bundle": 20,
         "evrinoma/exchange-rate-bundle": 20,
+        "evrinoma/fetch-bundle": 20,
         "evrinoma/menu-bundle": 20,
         "evrinoma/security-bundle": 20,
         "evrinoma/utils-bundle": 20,

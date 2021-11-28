@@ -111,6 +111,9 @@
     "evrinoma/exchange-rate-bundle": {
         "version": "dev-master"
     },
+    "evrinoma/fetch-bundle": {
+        "version": "dev-master"
+    },
     "evrinoma/menu-bundle": {
         "version": "dev-master"
     },
