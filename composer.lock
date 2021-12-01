@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69d0c039d51bf237ef8f3e0affea20ce",
+    "content-hash": "21febe7f8d42f4fa067c55fa8277ac73",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -1603,6 +1603,53 @@
             "time": "2021-11-14T15:36:13+00:00"
         },
         {
+            "name": "evrinoma/dto-common",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/evrinoma/DtoCommon.git",
+                "reference": "4935b159fb6fd9526a9c8a04449abbb6a7e4a421"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/evrinoma/DtoCommon/zipball/4935b159fb6fd9526a9c8a04449abbb6a7e4a421",
+                "reference": "4935b159fb6fd9526a9c8a04449abbb6a7e4a421",
+                "shasum": ""
+            },
+            "require": {
+                "evrinoma/dto-bundle": "dev-master",
+                "php": "^7.4 || ^8.0"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Evrinoma\\DtoCommon\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolay Nikolaev",
+                    "email": "evrinoma@gmail.com"
+                }
+            ],
+            "description": "Dto common",
+            "keywords": [
+                "Dto common"
+            ],
+            "support": {
+                "source": "https://github.com/evrinoma/DtoCommon/tree/master",
+                "issues": "https://github.com/evrinoma/DtoCommon/issues"
+            },
+            "time": "2021-11-14T15:36:13+00:00"
+        },
+        {
             "name": "evrinoma/menu-bundle",
             "version": "dev-master",
             "source": {
@@ -1883,6 +1930,74 @@
                 "issues": "https://github.com/evrinoma/UtilsBundle/issues"
             },
             "time": "2021-11-14T15:36:13+00:00"
+        },
+        {
+            "name": "evrinoma/vacation-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/evrinoma/VacationBundle.git",
+                "reference": "eefd37f81bd7360698a362fba260342de96e2d35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/evrinoma/VacationBundle/zipball/eefd37f81bd7360698a362fba260342de96e2d35",
+                "reference": "eefd37f81bd7360698a362fba260342de96e2d35",
+                "shasum": ""
+            },
+            "require": {
+                "evrinoma/dto-bundle": "dev-master",
+                "evrinoma/dto-common": "dev-master",
+                "evrinoma/utils-bundle": "dev-master",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.0",
+                "doctrine/doctrine-bundle": "^2.1",
+                "doctrine/doctrine-fixtures-bundle": "^3.4",
+                "doctrine/doctrine-migrations-bundle": "^3.0",
+                "doctrine/orm": "^2.8",
+                "evrinoma/test-utils-bundle": "dev-master",
+                "friendsofsymfony/rest-bundle": "^3",
+                "jms/serializer-bundle": "^3.1",
+                "nelmio/api-doc-bundle": "^4",
+                "phpunit/phpunit": "^9.5.2",
+                "symfony/browser-kit": "^5.2",
+                "symfony/dotenv": "5.2.*",
+                "symfony/form": "5.2.*",
+                "symfony/intl": "5.3.*",
+                "symfony/phpunit-bridge": "^5.0",
+                "symfony/validator": "5.2.*",
+                "symfony/yaml": "^5.0"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Evrinoma\\VacationBundle\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolay Nikolaev",
+                    "email": "evrinoma@gmail.com"
+                }
+            ],
+            "description": "Vacation",
+            "keywords": [
+                "Vacation"
+            ],
+            "support": {
+                "source": "https://github.com/evrinoma/VacationBundle/tree/master",
+                "issues": "https://github.com/evrinoma/VacationBundle/issues"
+            },
+            "time": "2021-12-01T19:23:43+00:00"
         },
         {
             "name": "friendsofphp/proxy-manager-lts",
@@ -11824,6 +11939,7 @@
         "evrinoma/menu-bundle": 20,
         "evrinoma/security-bundle": 20,
         "evrinoma/utils-bundle": 20,
+        "evrinoma/vacation-bundle": 20,
         "nelmio/api-doc-bundle": 20,
         "evrinoma/test-utils-bundle": 20
     },

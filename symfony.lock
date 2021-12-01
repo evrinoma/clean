@@ -105,6 +105,9 @@
     "evrinoma/dto-bundle": {
         "version": "dev-master"
     },
+    "evrinoma/dto-common": {
+        "version": "dev-master"
+    },
     "evrinoma/menu-bundle": {
         "version": "dev-master"
     },
@@ -121,6 +124,9 @@
         "version": "2.2.x-dev"
     },
     "evrinoma/utils-bundle": {
+        "version": "dev-master"
+    },
+    "evrinoma/vacation-bundle": {
         "version": "dev-master"
     },
     "friendsofphp/proxy-manager-lts": {
