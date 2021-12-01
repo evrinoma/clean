@@ -3,3 +3,6 @@ dashboard:
 
 menu:
   resource: "@EvrinomaMenuBundle/Resources/config/routes.yml"
+
+menu:
+  resource: "@EvrinomaVacationBundle/Resources/config/routes.yml"

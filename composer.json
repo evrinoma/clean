@@ -18,6 +18,7 @@
         "evrinoma/security-bundle": "dev-master",
         "evrinoma/user-bundle": "^2.1",
         "evrinoma/utils-bundle": "dev-master",
+        "evrinoma/vacation-bundle": "dev-master",
         "friendsofsymfony/jsrouting-bundle": "^2.7",
         "friendsofsymfony/rest-bundle": "^3.0",
         "lexik/jwt-authentication-bundle": "^2.14",
