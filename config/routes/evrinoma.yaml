@@ -4,5 +4,5 @@ dashboard:
 menu:
   resource: "@EvrinomaMenuBundle/Resources/config/routes.yml"
 
-menu:
+vacation:
   resource: "@EvrinomaVacationBundle/Resources/config/routes.yml"
