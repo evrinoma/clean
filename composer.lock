@@ -1887,12 +1887,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/UtilsBundle.git",
-                "reference": "52fe49c9bad2f8beae0876555c7e5863faadd317"
+                "reference": "18c1bd51d9b40a71e9907acb828ca7aff87e1b25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/UtilsBundle/zipball/52fe49c9bad2f8beae0876555c7e5863faadd317",
-                "reference": "52fe49c9bad2f8beae0876555c7e5863faadd317",
+                "url": "https://api.github.com/repos/evrinoma/UtilsBundle/zipball/18c1bd51d9b40a71e9907acb828ca7aff87e1b25",
+                "reference": "18c1bd51d9b40a71e9907acb828ca7aff87e1b25",
                 "shasum": ""
             },
             "require": {
@@ -1929,7 +1929,7 @@
                 "source": "https://github.com/evrinoma/UtilsBundle/tree/master",
                 "issues": "https://github.com/evrinoma/UtilsBundle/issues"
             },
-            "time": "2021-11-14T15:36:13+00:00"
+            "time": "2021-12-02T20:58:31+00:00"
         },
         {
             "name": "evrinoma/vacation-bundle",
@@ -1937,12 +1937,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/VacationBundle.git",
-                "reference": "124b49a0b1b4599f2908623f837f49c963048d53"
+                "reference": "cc1524dfd40d9cee209f49f2521fb2e84fdb239a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/VacationBundle/zipball/124b49a0b1b4599f2908623f837f49c963048d53",
-                "reference": "124b49a0b1b4599f2908623f837f49c963048d53",
+                "url": "https://api.github.com/repos/evrinoma/VacationBundle/zipball/cc1524dfd40d9cee209f49f2521fb2e84fdb239a",
+                "reference": "cc1524dfd40d9cee209f49f2521fb2e84fdb239a",
                 "shasum": ""
             },
             "require": {
@@ -1997,7 +1997,7 @@
                 "source": "https://github.com/evrinoma/VacationBundle/tree/master",
                 "issues": "https://github.com/evrinoma/VacationBundle/issues"
             },
-            "time": "2021-12-02T18:37:56+00:00"
+            "time": "2021-12-02T20:36:15+00:00"
         },
         {
             "name": "friendsofphp/proxy-manager-lts",
