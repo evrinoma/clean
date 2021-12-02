@@ -1,13 +1,24 @@
 jms_serializer:
-    visitors:
-        xml_serialization:
-            format_output: '%kernel.debug%'
-#    metadata:
-#        auto_detection: false
-#        directories:
-#            any-name:
-#                namespace_prefix: "My\\FooBundle"
-#                path: "@MyFooBundle/Resources/config/serializer"
-#            another-name:
-#                namespace_prefix: "My\\BarBundle"
-#                path: "@MyBarBundle/Resources/config/serializer"
+  visitors:
+    xml_serialization:
+      format_output: '%kernel.debug%'
+  #    metadata:
+  #        auto_detection: false
+  #        directories:
+  #            any-name:
+  #                namespace_prefix: "My\\FooBundle"
+  #                path: "@MyFooBundle/Resources/config/serializer"
+  #            another-name:
+  #                namespace_prefix: "My\\BarBundle"
+  #                path: "@MyBarBundle/Resources/config/serializer"
+  metadata:
+    directories:
+      AppUser:
+        namespace_prefix: "App\\User\\Entity"
+        path: "%kernel.project_dir%/config/serializer/App/User"
+      FOSUserBundle:
+        namespace_prefix: "FOS\\UserBundle"
+        path: "%kernel.project_dir%/config/serializer/FosUserBundle"
+      VacationBundle:
+        namespace_prefix: "Evrinoma\\VacationBundle"
+        path: "%kernel.project_dir%/config/serializer/VacationBundle"

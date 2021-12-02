@@ -1,0 +1,10 @@
+App\Entity\User:
+  exclusion_policy: ALL
+  properties:
+    id:
+      groups: [
+          api_get_vacation, api_post_vacation, api_put_vacation
+      ]
+
+
+

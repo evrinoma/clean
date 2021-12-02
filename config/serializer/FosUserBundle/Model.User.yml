@@ -1,0 +1,28 @@
+FOS\UserBundle\Model\User:
+  exclusion_policy: ALL
+  properties:
+    id:
+      groups: [
+          api_get_vacation, api_post_vacation, api_put_vacation
+      ]
+      expose: true
+    username:
+      groups: [
+          api_get_vacation, api_post_vacation, api_put_vacation
+      ]
+      expose: true
+    email:
+      groups: [
+          api_get_vacation, api_post_vacation, api_put_vacation
+      ]
+      expose: true
+    emailCanonical:
+      groups: [
+          api_get_vacation, api_post_vacation, api_put_vacation
+      ]
+      expose: true
+    roles:
+      groups: [
+          api_get_vacation, api_post_vacation, api_put_vacation
+      ]
+      expose: true
