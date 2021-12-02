@@ -1655,12 +1655,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/MenuBundle.git",
-                "reference": "b47b6a40dd2b1a5e67aab94bf99018d25631df42"
+                "reference": "7b9bbd89cbd60c5160b67ec1f70e7b64507b94c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/MenuBundle/zipball/b47b6a40dd2b1a5e67aab94bf99018d25631df42",
-                "reference": "b47b6a40dd2b1a5e67aab94bf99018d25631df42",
+                "url": "https://api.github.com/repos/evrinoma/MenuBundle/zipball/7b9bbd89cbd60c5160b67ec1f70e7b64507b94c1",
+                "reference": "7b9bbd89cbd60c5160b67ec1f70e7b64507b94c1",
                 "shasum": ""
             },
             "require": {
@@ -1697,7 +1697,7 @@
                 "source": "https://github.com/evrinoma/MenuBundle/tree/master",
                 "issues": "https://github.com/evrinoma/MenuBundle/issues"
             },
-            "time": "2021-11-14T19:56:03+00:00"
+            "time": "2021-11-27T15:31:42+00:00"
         },
         {
             "name": "evrinoma/security-bundle",
@@ -1705,12 +1705,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/SecurityBundle.git",
-                "reference": "e4ac3feed62d9e695e9372266eb474e89cab9baf"
+                "reference": "c3b31c29b69728e9bc8e15fd4a7b3e8106344f5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/SecurityBundle/zipball/e4ac3feed62d9e695e9372266eb474e89cab9baf",
-                "reference": "e4ac3feed62d9e695e9372266eb474e89cab9baf",
+                "url": "https://api.github.com/repos/evrinoma/SecurityBundle/zipball/c3b31c29b69728e9bc8e15fd4a7b3e8106344f5f",
+                "reference": "c3b31c29b69728e9bc8e15fd4a7b3e8106344f5f",
                 "shasum": ""
             },
             "require": {
@@ -1748,7 +1748,7 @@
                 "source": "https://github.com/evrinoma/SecurityBundle/tree/master",
                 "issues": "https://github.com/evrinoma/SecurityBundle/issues"
             },
-            "time": "2021-11-14T18:43:17+00:00"
+            "time": "2021-11-23T20:32:19+00:00"
         },
         {
             "name": "evrinoma/shell-bundle",
@@ -1937,12 +1937,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/VacationBundle.git",
-                "reference": "682dbb448996572fca2a685ed125f4650125e08e"
+                "reference": "d64bab08b335b5dd15f088bd588004be5981b83e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/VacationBundle/zipball/682dbb448996572fca2a685ed125f4650125e08e",
-                "reference": "682dbb448996572fca2a685ed125f4650125e08e",
+                "url": "https://api.github.com/repos/evrinoma/VacationBundle/zipball/d64bab08b335b5dd15f088bd588004be5981b83e",
+                "reference": "d64bab08b335b5dd15f088bd588004be5981b83e",
                 "shasum": ""
             },
             "require": {
@@ -1997,7 +1997,7 @@
                 "source": "https://github.com/evrinoma/VacationBundle/tree/master",
                 "issues": "https://github.com/evrinoma/VacationBundle/issues"
             },
-            "time": "2021-12-01T21:29:15+00:00"
+            "time": "2021-12-02T16:17:49+00:00"
         },
         {
             "name": "friendsofphp/proxy-manager-lts",
