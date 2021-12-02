@@ -31,3 +31,7 @@ safety:
       access_ttl: '%env(resolve:JWT_ACCESS_TOKEN_TTL)%'
       refresh_ttl: '%env(JWT_REFRESH_TOKEN_TTL)%'
       domain: '%env(JWT_DOMAIN)%'
+
+
+vacation:
+  entity_user: App\Entity\User
