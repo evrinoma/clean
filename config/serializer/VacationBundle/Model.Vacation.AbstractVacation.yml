@@ -1,0 +1,45 @@
+Evrinoma\VacationBundle\Model\Vacation\AbstractVacation:
+  exclusion_policy: ALL
+  properties:
+    id:
+      groups: [
+          api_get_vacation, api_post_vacation, api_put_vacation
+      ]
+      expose: true
+    createdAt:
+      type: DateTimeImmutable<'Y-m-d H:i'>
+      groups: [
+          api_get_vacation, api_post_vacation, api_put_vacation
+      ]
+    updatedAt:
+      type: DateTimeImmutable<'Y-m-d H:i'>
+      groups: [
+          api_get_vacation, api_post_vacation, api_put_vacation
+      ]
+    user:
+      type: Evrinoma\VacationBundle\Model\User\VacationInterface
+      groups: [
+          api_get_vacation, api_post_vacation, api_put_vacation
+      ]
+      expose: true
+    resolver:
+      type: Evrinoma\VacationBundle\Model\User\VacationInterface
+      groups: [
+          api_get_vacation, api_post_vacation, api_put_vacation
+      ]
+      expose: true
+    status:
+      groups: [
+          api_get_vacation, api_post_vacation, api_put_vacation
+      ]
+      expose: true
+    dateStart:
+      type: DateTimeImmutable<'Y-m-d H:i'>
+      groups: [
+          api_get_vacation, api_post_vacation, api_put_vacation
+      ]
+    dateFinish:
+      type: DateTimeImmutable<'Y-m-d H:i'>
+      groups: [
+          api_get_vacation, api_post_vacation, api_put_vacation
+      ]
