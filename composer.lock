@@ -1937,12 +1937,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/VacationBundle.git",
-                "reference": "cc1524dfd40d9cee209f49f2521fb2e84fdb239a"
+                "reference": "5d7034c5bb7acc15518835c9d4bf04ec920cfe25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/VacationBundle/zipball/cc1524dfd40d9cee209f49f2521fb2e84fdb239a",
-                "reference": "cc1524dfd40d9cee209f49f2521fb2e84fdb239a",
+                "url": "https://api.github.com/repos/evrinoma/VacationBundle/zipball/5d7034c5bb7acc15518835c9d4bf04ec920cfe25",
+                "reference": "5d7034c5bb7acc15518835c9d4bf04ec920cfe25",
                 "shasum": ""
             },
             "require": {
@@ -1997,7 +1997,7 @@
                 "source": "https://github.com/evrinoma/VacationBundle/tree/master",
                 "issues": "https://github.com/evrinoma/VacationBundle/issues"
             },
-            "time": "2021-12-02T20:36:15+00:00"
+            "time": "2021-12-02T21:42:34+00:00"
         },
         {
             "name": "friendsofphp/proxy-manager-lts",
