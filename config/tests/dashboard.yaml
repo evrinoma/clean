@@ -1,0 +1,9 @@
+services:
+    evrinoma.dashboard.test.functional.action:
+      class: App\Tests\Functional\Action\DashBoard
+      public: true
+      arguments:
+
+    App\Tests\Functional\Action\DashBoard:
+      alias: evrinoma.dashboard.test.functional.action
+      public: true

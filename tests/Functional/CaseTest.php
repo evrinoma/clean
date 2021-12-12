@@ -3,18 +3,13 @@
 namespace App\Tests\Functional;
 
 use App\Tests\Functional\Helper\AuthorizationTrait;
-use Evrinoma\TestUtilsBundle\Browser\ApiBrowserTestInterface;
-use Evrinoma\TestUtilsBundle\Browser\ApiBrowserTestTrait;
+use Evrinoma\TestUtilsBundle\Functional\AbstractFunctionalTest;
 use Evrinoma\TestUtilsBundle\Helper\AbstractSymfony;
-use Evrinoma\TestUtilsBundle\Helper\ApiMethodTestInterface;
-use Evrinoma\TestUtilsBundle\Helper\ApiMethodTestTrait;
 use Evrinoma\TestUtilsBundle\Helper\DoctrineTestTrait;
-use Evrinoma\TestUtilsBundle\Helper\ResponseStatusTestTrait;
-use Evrinoma\TestUtilsBundle\Web\AbstractWebCaseTest;
 
-abstract class CaseTest extends AbstractWebCaseTest  implements ApiBrowserTestInterface, ApiMethodTestInterface
+abstract class CaseTest extends AbstractFunctionalTest
 {
-    use ApiMethodTestTrait, ApiBrowserTestTrait, AuthorizationTrait, DoctrineTestTrait, ResponseStatusTestTrait;
+    use AuthorizationTrait, DoctrineTestTrait;
 
 //region SECTION: Protected
     protected function setUp(): void
@@ -30,9 +25,11 @@ abstract class CaseTest extends AbstractWebCaseTest  implements ApiBrowserTestIn
         $this->getAuthorization($container, $this->client);
     }
 
+
     protected function tearDown(): void
     {
 
     }
 //endregion Protected
+
 }
