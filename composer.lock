@@ -1937,12 +1937,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/VacationBundle.git",
-                "reference": "258caced5df9e6025bcba8230275a20679dcc086"
+                "reference": "8214cdaba1060e80e35653e1fca5f6752c39603a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/VacationBundle/zipball/258caced5df9e6025bcba8230275a20679dcc086",
-                "reference": "258caced5df9e6025bcba8230275a20679dcc086",
+                "url": "https://api.github.com/repos/evrinoma/VacationBundle/zipball/8214cdaba1060e80e35653e1fca5f6752c39603a",
+                "reference": "8214cdaba1060e80e35653e1fca5f6752c39603a",
                 "shasum": ""
             },
             "require": {
@@ -1977,7 +1977,8 @@
                     "Evrinoma\\VacationBundle\\": "src/"
                 },
                 "exclude-from-classmap": [
-                    "/Tests/"
+                    "/Tests/",
+                    "!/Tests/Functional/Action"
                 ]
             },
             "license": [
@@ -1997,7 +1998,7 @@
                 "source": "https://github.com/evrinoma/VacationBundle/tree/master",
                 "issues": "https://github.com/evrinoma/VacationBundle/issues"
             },
-            "time": "2021-12-03T06:35:24+00:00"
+            "time": "2021-12-12T15:05:47+00:00"
         },
         {
             "name": "friendsofphp/proxy-manager-lts",
@@ -9626,12 +9627,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/TestUtilsBundle.git",
-                "reference": "9814f231b18f6fdf666eaac090829f7636055da7"
+                "reference": "e164017c9690998093636833b5e59856e218fbda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/TestUtilsBundle/zipball/9814f231b18f6fdf666eaac090829f7636055da7",
-                "reference": "9814f231b18f6fdf666eaac090829f7636055da7",
+                "url": "https://api.github.com/repos/evrinoma/TestUtilsBundle/zipball/e164017c9690998093636833b5e59856e218fbda",
+                "reference": "e164017c9690998093636833b5e59856e218fbda",
                 "shasum": ""
             },
             "require": {
@@ -9662,7 +9663,7 @@
                 "source": "https://github.com/evrinoma/TestUtilsBundle/tree/master",
                 "issues": "https://github.com/evrinoma/TestUtilsBundle/issues"
             },
-            "time": "2021-11-22T15:37:08+00:00"
+            "time": "2021-12-09T14:19:37+00:00"
         },
         {
             "name": "myclabs/deep-copy",
