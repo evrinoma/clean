@@ -1655,12 +1655,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/ExchangeRateBundle.git",
-                "reference": "ecd7a33f650efbc4e18df15a1c50438c68327a1c"
+                "reference": "7c3f43db1915ce1946b1f769057a4888bf0a8577"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/ExchangeRateBundle/zipball/ecd7a33f650efbc4e18df15a1c50438c68327a1c",
-                "reference": "ecd7a33f650efbc4e18df15a1c50438c68327a1c",
+                "url": "https://api.github.com/repos/evrinoma/ExchangeRateBundle/zipball/7c3f43db1915ce1946b1f769057a4888bf0a8577",
+                "reference": "7c3f43db1915ce1946b1f769057a4888bf0a8577",
                 "shasum": ""
             },
             "require": {
@@ -1695,7 +1695,8 @@
                     "Evrinoma\\ExchangeRateBundle\\": "src/"
                 },
                 "exclude-from-classmap": [
-                    "/Tests/"
+                    "/Tests/",
+                    "!/Tests/Functional/Action"
                 ]
             },
             "license": [
@@ -1715,7 +1716,7 @@
                 "source": "https://github.com/evrinoma/ExchangeRateBundle/tree/master",
                 "issues": "https://github.com/evrinoma/ExchangeRateBundle/issues"
             },
-            "time": "2021-11-29T05:12:46+00:00"
+            "time": "2021-12-12T15:05:47+00:00"
         },
         {
             "name": "evrinoma/fetch-bundle",
@@ -2021,12 +2022,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/UtilsBundle.git",
-                "reference": "52fe49c9bad2f8beae0876555c7e5863faadd317"
+                "reference": "18c1bd51d9b40a71e9907acb828ca7aff87e1b25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/UtilsBundle/zipball/52fe49c9bad2f8beae0876555c7e5863faadd317",
-                "reference": "52fe49c9bad2f8beae0876555c7e5863faadd317",
+                "url": "https://api.github.com/repos/evrinoma/UtilsBundle/zipball/18c1bd51d9b40a71e9907acb828ca7aff87e1b25",
+                "reference": "18c1bd51d9b40a71e9907acb828ca7aff87e1b25",
                 "shasum": ""
             },
             "require": {
@@ -2063,7 +2064,7 @@
                 "source": "https://github.com/evrinoma/UtilsBundle/tree/master",
                 "issues": "https://github.com/evrinoma/UtilsBundle/issues"
             },
-            "time": "2021-11-14T15:36:13+00:00"
+            "time": "2021-12-02T20:58:31+00:00"
         },
         {
             "name": "friendsofphp/proxy-manager-lts",
@@ -9692,12 +9693,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/TestUtilsBundle.git",
-                "reference": "9814f231b18f6fdf666eaac090829f7636055da7"
+                "reference": "e164017c9690998093636833b5e59856e218fbda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/TestUtilsBundle/zipball/9814f231b18f6fdf666eaac090829f7636055da7",
-                "reference": "9814f231b18f6fdf666eaac090829f7636055da7",
+                "url": "https://api.github.com/repos/evrinoma/TestUtilsBundle/zipball/e164017c9690998093636833b5e59856e218fbda",
+                "reference": "e164017c9690998093636833b5e59856e218fbda",
                 "shasum": ""
             },
             "require": {
@@ -9728,7 +9729,7 @@
                 "source": "https://github.com/evrinoma/TestUtilsBundle/tree/master",
                 "issues": "https://github.com/evrinoma/TestUtilsBundle/issues"
             },
-            "time": "2021-11-22T15:37:08+00:00"
+            "time": "2021-12-09T14:19:37+00:00"
         },
         {
             "name": "myclabs/deep-copy",
