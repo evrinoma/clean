@@ -47,3 +47,4 @@ services:
 
 imports:
     - { resource: services/ }
+    - { resource: tests/ }
