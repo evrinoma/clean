@@ -3,3 +3,7 @@ dashboard:
 
 menu:
   resource: "@EvrinomaMenuBundle/Resources/config/routes.yml"
+
+fcr:
+  resource: "@EvrinomaFcrBundle/Resources/config/routes.yml"
+

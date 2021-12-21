@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69d0c039d51bf237ef8f3e0affea20ce",
+    "content-hash": "956a99c37ffad223655c636d2e9708f6",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -1601,6 +1601,125 @@
                 "issues": "https://github.com/evrinoma/DtoBundle/issues"
             },
             "time": "2021-11-14T15:36:13+00:00"
+        },
+        {
+            "name": "evrinoma/dto-common",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/evrinoma/DtoCommon.git",
+                "reference": "ea405acecaa6723d94fc862f2f65a895eeb8c59c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/evrinoma/DtoCommon/zipball/ea405acecaa6723d94fc862f2f65a895eeb8c59c",
+                "reference": "ea405acecaa6723d94fc862f2f65a895eeb8c59c",
+                "shasum": ""
+            },
+            "require": {
+                "evrinoma/dto-bundle": "dev-master",
+                "php": "^7.4 || ^8.0"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Evrinoma\\DtoCommon\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolay Nikolaev",
+                    "email": "evrinoma@gmail.com"
+                }
+            ],
+            "description": "Dto common",
+            "keywords": [
+                "Dto common"
+            ],
+            "support": {
+                "source": "https://github.com/evrinoma/DtoCommon/tree/master",
+                "issues": "https://github.com/evrinoma/DtoCommon/issues"
+            },
+            "time": "2021-12-17T12:24:02+00:00"
+        },
+        {
+            "name": "evrinoma/fcr-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/evrinoma/FcrBundle.git",
+                "reference": "8bba4eb1d97feee8d50aedb855bcd9a064a2f86c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/evrinoma/FcrBundle/zipball/8bba4eb1d97feee8d50aedb855bcd9a064a2f86c",
+                "reference": "8bba4eb1d97feee8d50aedb855bcd9a064a2f86c",
+                "shasum": ""
+            },
+            "require": {
+                "evrinoma/dto-bundle": "dev-master",
+                "evrinoma/dto-common": "dev-master",
+                "evrinoma/utils-bundle": "dev-master",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.0",
+                "doctrine/doctrine-bundle": "^2.1",
+                "doctrine/doctrine-fixtures-bundle": "^3.4",
+                "doctrine/doctrine-migrations-bundle": "^3.0",
+                "doctrine/orm": "^2.8",
+                "evrinoma/test-utils-bundle": "dev-master",
+                "friendsofsymfony/rest-bundle": "^3",
+                "jms/serializer-bundle": "^3.1",
+                "nelmio/api-doc-bundle": "^4",
+                "phpunit/phpunit": "^9.5.2",
+                "symfony/browser-kit": "^5.2",
+                "symfony/dotenv": "5.2.*",
+                "symfony/form": "5.2.*",
+                "symfony/intl": "5.3.*",
+                "symfony/phpunit-bridge": "^5.0",
+                "symfony/validator": "5.2.*",
+                "symfony/yaml": "^5.0"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Evrinoma\\FcrBundle\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "/Tests/",
+                    "!/Tests/Functional/Action"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolay Nikolaev",
+                    "email": "evrinoma@gmail.com"
+                }
+            ],
+            "description": "Fcr",
+            "keywords": [
+                "Fcr",
+                "Financial responsibility center",
+                "Rc",
+                "Responsibility center"
+            ],
+            "support": {
+                "source": "https://github.com/evrinoma/FcrBundle/tree/master",
+                "issues": "https://github.com/evrinoma/FcrBundle/issues"
+            },
+            "time": "2021-12-17T16:48:04+00:00"
         },
         {
             "name": "evrinoma/menu-bundle",
@@ -11821,6 +11940,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "evrinoma/dashboard-bundle": 20,
+        "evrinoma/fcr-bundle": 20,
         "evrinoma/menu-bundle": 20,
         "evrinoma/security-bundle": 20,
         "evrinoma/utils-bundle": 20,

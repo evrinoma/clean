@@ -105,6 +105,9 @@
     "evrinoma/dto-bundle": {
         "version": "dev-master"
     },
+    "evrinoma/fcr-bundle": {
+        "version": "dev-master"
+    },
     "evrinoma/menu-bundle": {
         "version": "dev-master"
     },

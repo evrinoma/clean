@@ -14,6 +14,7 @@
         "doctrine/doctrine-migrations-bundle": "^3.0",
         "doctrine/orm": "^2.10",
         "evrinoma/dashboard-bundle": "dev-master",
+        "evrinoma/fcr-bundle": "dev-master",
         "evrinoma/menu-bundle": "dev-master",
         "evrinoma/security-bundle": "dev-master",
         "evrinoma/user-bundle": "^2.1",
@@ -117,17 +118,17 @@
             "type": "vcs",
             "url": "https://github.com/evrinoma/DtoBundle.git"
         },
+        "dto-common": {
+            "type": "vcs",
+            "url": "https://github.com/evrinoma/DtoCommon.git"
+        },
+        "fcr": {
+            "type": "vcs",
+            "url": "https://github.com/evrinoma/FcrBundle.git"
+        },
         "menu": {
             "type": "vcs",
             "url": "https://github.com/evrinoma/MenuBundle.git"
-        },
-        "user": {
-            "type": "vcs",
-            "url": "https://github.com/evrinoma/FOSUserBundle.git"
-        },
-        "utils": {
-            "type": "vcs",
-            "url": "https://github.com/evrinoma/UtilsBundle.git"
         },
         "security-bundle": {
             "type": "vcs",
@@ -140,6 +141,14 @@
         "test-utils": {
             "type": "vcs",
             "url": "https://github.com/evrinoma/TestUtilsBundle.git"
+        },
+        "user": {
+            "type": "vcs",
+            "url": "https://github.com/evrinoma/FOSUserBundle.git"
+        },
+        "utils": {
+            "type": "vcs",
+            "url": "https://github.com/evrinoma/UtilsBundle.git"
         }
     }
 }
