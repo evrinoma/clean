@@ -2,8 +2,8 @@
 
 namespace App\Command\Analyzer;
 
+use App\Command\Dto\Preserve\TypeApiDto;
 use Doctrine\ORM\EntityManagerInterface;
-use Evrinoma\ExchangeRateBundle\Dto\Preserve\TypeApiDto;
 use Evrinoma\ExchangeRateBundle\Dto\TypeApiDtoInterface;
 use Evrinoma\ExchangeRateBundle\Exception\Type\TypeNotFoundException;
 use Evrinoma\ExchangeRateBundle\Manager\Type\CommandManager;
