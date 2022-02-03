@@ -1562,12 +1562,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/DtoBundle.git",
-                "reference": "46cc6e20b5f3f0800564e884f00b43369c3dc67b"
+                "reference": "5cf6820ff0c31c07d776404ab01b66becce2e823"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/DtoBundle/zipball/46cc6e20b5f3f0800564e884f00b43369c3dc67b",
-                "reference": "46cc6e20b5f3f0800564e884f00b43369c3dc67b",
+                "url": "https://api.github.com/repos/evrinoma/DtoBundle/zipball/5cf6820ff0c31c07d776404ab01b66becce2e823",
+                "reference": "5cf6820ff0c31c07d776404ab01b66becce2e823",
                 "shasum": ""
             },
             "require": {
@@ -1600,7 +1600,7 @@
                 "source": "https://github.com/evrinoma/DtoBundle/tree/master",
                 "issues": "https://github.com/evrinoma/DtoBundle/issues"
             },
-            "time": "2021-11-14T15:36:13+00:00"
+            "time": "2022-02-01T11:59:03+00:00"
         },
         {
             "name": "evrinoma/dto-common",
@@ -1608,12 +1608,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/DtoCommon.git",
-                "reference": "4935b159fb6fd9526a9c8a04449abbb6a7e4a421"
+                "reference": "d56ea9fa5eb24de3dc587d17bafe0b1f3ef90026"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/DtoCommon/zipball/4935b159fb6fd9526a9c8a04449abbb6a7e4a421",
-                "reference": "4935b159fb6fd9526a9c8a04449abbb6a7e4a421",
+                "url": "https://api.github.com/repos/evrinoma/DtoCommon/zipball/d56ea9fa5eb24de3dc587d17bafe0b1f3ef90026",
+                "reference": "d56ea9fa5eb24de3dc587d17bafe0b1f3ef90026",
                 "shasum": ""
             },
             "require": {
@@ -1647,7 +1647,7 @@
                 "source": "https://github.com/evrinoma/DtoCommon/tree/master",
                 "issues": "https://github.com/evrinoma/DtoCommon/issues"
             },
-            "time": "2021-11-14T15:36:13+00:00"
+            "time": "2022-02-03T17:40:18+00:00"
         },
         {
             "name": "evrinoma/menu-bundle",
@@ -1655,12 +1655,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/MenuBundle.git",
-                "reference": "7b9bbd89cbd60c5160b67ec1f70e7b64507b94c1"
+                "reference": "237ef2255f7902dd3bb51308a1480cf94cf2d47b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/MenuBundle/zipball/7b9bbd89cbd60c5160b67ec1f70e7b64507b94c1",
-                "reference": "7b9bbd89cbd60c5160b67ec1f70e7b64507b94c1",
+                "url": "https://api.github.com/repos/evrinoma/MenuBundle/zipball/237ef2255f7902dd3bb51308a1480cf94cf2d47b",
+                "reference": "237ef2255f7902dd3bb51308a1480cf94cf2d47b",
                 "shasum": ""
             },
             "require": {
@@ -1697,7 +1697,7 @@
                 "source": "https://github.com/evrinoma/MenuBundle/tree/master",
                 "issues": "https://github.com/evrinoma/MenuBundle/issues"
             },
-            "time": "2021-11-27T15:31:42+00:00"
+            "time": "2022-02-03T17:41:16+00:00"
         },
         {
             "name": "evrinoma/security-bundle",
@@ -1705,12 +1705,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/SecurityBundle.git",
-                "reference": "c3b31c29b69728e9bc8e15fd4a7b3e8106344f5f"
+                "reference": "d71574339eca29e58f0a194faad47c7bf55ae21a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/SecurityBundle/zipball/c3b31c29b69728e9bc8e15fd4a7b3e8106344f5f",
-                "reference": "c3b31c29b69728e9bc8e15fd4a7b3e8106344f5f",
+                "url": "https://api.github.com/repos/evrinoma/SecurityBundle/zipball/d71574339eca29e58f0a194faad47c7bf55ae21a",
+                "reference": "d71574339eca29e58f0a194faad47c7bf55ae21a",
                 "shasum": ""
             },
             "require": {
@@ -1748,7 +1748,7 @@
                 "source": "https://github.com/evrinoma/SecurityBundle/tree/master",
                 "issues": "https://github.com/evrinoma/SecurityBundle/issues"
             },
-            "time": "2021-11-23T20:32:19+00:00"
+            "time": "2021-12-28T11:37:34+00:00"
         },
         {
             "name": "evrinoma/shell-bundle",
@@ -1887,12 +1887,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/UtilsBundle.git",
-                "reference": "18c1bd51d9b40a71e9907acb828ca7aff87e1b25"
+                "reference": "581a3a45a348afea833e4fd8ccb1a3dee01f4d32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/UtilsBundle/zipball/18c1bd51d9b40a71e9907acb828ca7aff87e1b25",
-                "reference": "18c1bd51d9b40a71e9907acb828ca7aff87e1b25",
+                "url": "https://api.github.com/repos/evrinoma/UtilsBundle/zipball/581a3a45a348afea833e4fd8ccb1a3dee01f4d32",
+                "reference": "581a3a45a348afea833e4fd8ccb1a3dee01f4d32",
                 "shasum": ""
             },
             "require": {
@@ -1929,7 +1929,7 @@
                 "source": "https://github.com/evrinoma/UtilsBundle/tree/master",
                 "issues": "https://github.com/evrinoma/UtilsBundle/issues"
             },
-            "time": "2021-12-02T20:58:31+00:00"
+            "time": "2022-02-01T08:58:12+00:00"
         },
         {
             "name": "evrinoma/vacation-bundle",
@@ -1937,12 +1937,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/VacationBundle.git",
-                "reference": "8214cdaba1060e80e35653e1fca5f6752c39603a"
+                "reference": "17fe925c229c0ef6cc01ec3104d7be6f8a13bb74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/VacationBundle/zipball/8214cdaba1060e80e35653e1fca5f6752c39603a",
-                "reference": "8214cdaba1060e80e35653e1fca5f6752c39603a",
+                "url": "https://api.github.com/repos/evrinoma/VacationBundle/zipball/17fe925c229c0ef6cc01ec3104d7be6f8a13bb74",
+                "reference": "17fe925c229c0ef6cc01ec3104d7be6f8a13bb74",
                 "shasum": ""
             },
             "require": {
@@ -1998,7 +1998,7 @@
                 "source": "https://github.com/evrinoma/VacationBundle/tree/master",
                 "issues": "https://github.com/evrinoma/VacationBundle/issues"
             },
-            "time": "2021-12-12T15:05:47+00:00"
+            "time": "2022-02-03T18:20:54+00:00"
         },
         {
             "name": "friendsofphp/proxy-manager-lts",
@@ -9627,12 +9627,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evrinoma/TestUtilsBundle.git",
-                "reference": "e164017c9690998093636833b5e59856e218fbda"
+                "reference": "cc17f5b818f929fbec636d6b54511eafc3a63919"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evrinoma/TestUtilsBundle/zipball/e164017c9690998093636833b5e59856e218fbda",
-                "reference": "e164017c9690998093636833b5e59856e218fbda",
+                "url": "https://api.github.com/repos/evrinoma/TestUtilsBundle/zipball/cc17f5b818f929fbec636d6b54511eafc3a63919",
+                "reference": "cc17f5b818f929fbec636d6b54511eafc3a63919",
                 "shasum": ""
             },
             "require": {
@@ -9663,7 +9663,7 @@
                 "source": "https://github.com/evrinoma/TestUtilsBundle/tree/master",
                 "issues": "https://github.com/evrinoma/TestUtilsBundle/issues"
             },
-            "time": "2021-12-09T14:19:37+00:00"
+            "time": "2022-01-21T16:53:13+00:00"
         },
         {
             "name": "myclabs/deep-copy",
