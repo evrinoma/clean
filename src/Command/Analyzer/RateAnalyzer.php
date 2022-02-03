@@ -7,10 +7,12 @@ use App\Command\Dto\Preserve\TypeApiDto;
 use Doctrine\ORM\EntityManagerInterface;
 use Evrinoma\ExchangeRateBundle\Dto\Preserve\RateApiDtoInterface;
 use Evrinoma\ExchangeRateBundle\Dto\TypeApiDtoInterface;
+use Evrinoma\ExchangeRateBundle\Dto\TypeApiDtoInterface as BaseTypeApiDtoInterface;
 use Evrinoma\ExchangeRateBundle\Manager\Rate\CommandManager as RateCommandManager;
 use Evrinoma\ExchangeRateBundle\Manager\Type\QueryManager as TypeQueryManager;
 use Evrinoma\ExchangeRateBundle\Model\Type\TypeInterface;
 use Evrinoma\FetchBundle\Analyzer\AbstractAnalyzer;
+use Evrinoma\ExchangeRateBundle\Dto\RateApiDtoInterface as BaseRateApiDtoInterface;
 
 class RateAnalyzer extends AbstractAnalyzer
 {
@@ -35,11 +37,11 @@ class RateAnalyzer extends AbstractAnalyzer
     {
         $this->createPoxyType();
 
-        if ($this->has('timestamp') && $this->has('base')) {
+        if ($this->has(BaseRateApiDtoInterface::CREATED) && $this->has(BaseTypeApiDtoInterface::BASE)) {
             $rate = new RateApiDto();
             $rate
-                ->setCreated((new \DateTimeImmutable)->setTimestamp((int)$this->get('timestamp')))
-                ->setBaseApiDto($this->getType($this->get('base')));
+                ->setCreated((new \DateTimeImmutable)->setTimestamp((int)$this->get(BaseRateApiDtoInterface::CREATED)))
+                ->setBaseApiDto($this->getType($this->get(BaseTypeApiDtoInterface::BASE)));
 
             if ($this->has('rates')) {
                 $records = $this->createPoxyRate($rate);
